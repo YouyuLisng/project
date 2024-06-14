@@ -1,0 +1,84 @@
+/* ---全站共用設定--- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei";
+    color: var(--color-text);
+    background: #FDFBFB;
+    font-size: var(--font-size-16);
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    line-height: 150%;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, a {
+    font-size: var(--font-size-16);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    line-height: 150%;
+}
+
+
+:root {
+    /* Colors: */
+    --color-primary: #82A80F;
+    --color-second: #EECC55;
+    --color-text: #323232;
+    --color-gray: #999999;
+    --color-red: #F06B6B;
+    --color-white: #FFFFFF;
+
+    --box-shadow: 0px 0px 4px 0px #DCC7C980;
+
+    /* Font/text values */
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-32: 32px;
+    --font-size-40: 40px;
+
+}
+
+@media (max-width: 767px) {
+    :root {
+        --font-size-20: 18px;
+        --font-size-24: 20px;
+        --font-size-32: 24px;
+        --font-size-40: 24px;
+    }
+}
